@@ -1,6 +1,6 @@
 Package.describe({
   name: 'clinical:modals',
-  version: '0.0.1',
+  version: '0.0.2',
   // Brief, one-line summary of the package.
   summary: 'Modal dialogs for the Clinical Meteor track.',
   // URL to the Git repository containing the source code for this package.
@@ -15,10 +15,20 @@ Package.onUse(function(api) {
 
   api.use('meteor-platform');
   api.use('less');
+  api.use('awatson1978:fonts-helveticas');
+  //api.use('clinical:overlays');
 
-  api.addFiles('components/confirmModal/confirmModal.js', 'client');
   api.addFiles('components/confirmModal/confirmModal.html', 'client');
+  api.addFiles('components/confirmModal/confirmModal.js', 'client');
   api.addFiles('components/confirmModal/confirmModal.less', 'client');
+
+  api.addFiles('components/keybindingsModal/keybindingsModal.html', 'client');
+  api.addFiles('components/keybindingsModal/keybindingsModal.js', 'client');
+  api.addFiles('components/keybindingsModal/keybindingsModal.less', 'client');
+
+  api.addFiles('components/promptModal/promptModal.html', 'client');
+  api.addFiles('components/promptModal/promptModal.js', 'client');
+  api.addFiles('components/promptModal/promptModal.less', 'client');
 
   api.addFiles('lib/modals.js');
 
