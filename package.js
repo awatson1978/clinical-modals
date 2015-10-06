@@ -15,7 +15,7 @@ Package.onUse(function(api) {
 
   api.use('meteor-platform');
   api.use('less');
-  api.use('awatson1978:fonts-helveticas');
+  api.use('awatson1978:fonts-helveticas@1.0.4');
   //api.use('clinical:overlays');
 
   api.addFiles('components/confirmModal/confirmModal.html', 'client');
