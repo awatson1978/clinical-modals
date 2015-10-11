@@ -1,15 +1,21 @@
-clinical:modals
+clinical:keybindings
 ======================================
 
-Modal dialogs for the Clinical Meteor track.
+Keybindings dialogs for the ClinicalFramework apps.
 
 ========================================
 #### Installation  
 
-````
-meteor add clinical:modals
+````sh
+meteor add clinical:keybindings
 ````
 
+========================================
+#### Usage  
+
+````js
+{{> keybindingsModal }}
+````
 
 
 ========================================

@@ -1,0 +1,23 @@
+<!-- set up the modal to start hidden and fade in and out -->
+<template name="keybindingsModal">
+  <div id="keybindingsModal" class="modal helveticas {{getVisibility}}" style={{getModalPosition}}>
+    <div class="modal-dialog" data-dismiss="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Keybindings!</h2>
+        </div>
+        <div class="modal-body">
+          <h4>Supporting the following keyboard events:  </h4>
+          <ul>
+            <li><strong>cmd + ctrl + k</strong><span class="description">keybindings panel</span></li>
+            <li><strong>cmd + ctrl + i</strong><span class="description">show/hide inbox and outbox</span></li>
+            <li><strong>cmd + ctrl + a</strong><span class="description">show/hide account cards</span></li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button id="modalOkButton" type="button" class="btn btn-primary">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
