@@ -28,10 +28,6 @@ Package.onUse(function (api) {
   api.addFiles('client/promptModal/promptModal.js', 'client');
   api.addFiles('client/promptModal/promptModal.less', 'client');
 
-  api.addFiles('client/keybindingsModal/keybindingsModal.html', 'client');
-  api.addFiles('client/keybindingsModal/keybindingsModal.js', 'client');
-  api.addFiles('client/keybindingsModal/keybindingsModal.less', 'client');
-
   api.export('keybindingsModal');
 });
 
