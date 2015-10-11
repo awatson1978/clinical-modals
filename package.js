@@ -38,5 +38,5 @@ Package.onUse(function (api) {
 Package.onTest(function (api) {
   api.use('tinytest');
   api.use('clinical:keybindings');
-  api.addFiles('tests/keybindings.js');
+  api.addFiles('tests/modals.js');
 });
