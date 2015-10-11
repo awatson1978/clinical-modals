@@ -10,12 +10,16 @@ Template.configListModal.events({
     Session.set("isEditing", false);
   },
   'click #saveListButton': function () {
-    Lists.update({_id: Session.get('selectedListId')}, {$set: {
-      'imageUrl': $('#listImageInput').val(),
-      'name': $('#listNameInput').val()
-    }});
+    Lists.update({
+      _id: Session.get('selectedListId')
+    }, {
+      $set: {
+        'imageUrl': $('#listImageInput').val(),
+        'name': $('#listNameInput').val()
+      }
+    });
   },
-  'click #confirmRemoveListButton': function() {
+  'click #confirmRemoveListButton': function () {
     // console.log('removing list ', Session.get('selectedUserId'));
 
     console.log('removing list ', Session.get('selectedListId'));
@@ -38,7 +42,7 @@ Template.configListModal.helpers({
   currentList: function () {
     return Lists.findOne(Session.get('selectedListId'));
   },
-  isEditing: function(){
+  isEditing: function () {
     return Session.get('isEditing');
   }
 });

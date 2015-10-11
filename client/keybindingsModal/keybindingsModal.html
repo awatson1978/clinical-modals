@@ -1,10 +1,10 @@
 <!-- set up the modal to start hidden and fade in and out -->
 <template name="keybindingsModal">
-  <div id="keybindingsModal" class="modal fade">
+  <div id="keybindingsModal" class="modal helveticas {{getVisibility}}" style={{getModalPosition}}>
     <div class="modal-dialog" data-dismiss="modal">
       <div class="modal-content">
         <div class="modal-header">
-          <h4>Keybindings!</h4>
+          <h2>Keybindings!</h2>
         </div>
         <div class="modal-body">
           <h4>Supporting the following keyboard events:  </h4>
@@ -18,7 +18,7 @@
           </ul>
         </div>
         <div class="modal-footer">
-          <button id="modalOkButton" type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+          <button id="modalOkButton" type="button" class="btn btn-primary">OK</button>
         </div>
       </div>
     </div>

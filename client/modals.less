@@ -1,0 +1,153 @@
+.modal{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  display: none;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+  outline: 0;
+  width: 768px;
+  background-color: white;
+
+  .modal-header{
+    padding: 15px;
+    border-bottom: 1px solid #e5e5e5;
+    min-height: 16.42857143px;
+  }
+  .modal-body{
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .modal-footer{
+    padding: 15px;
+    text-align: right;
+    border-top: 1px solid #e5e5e5;
+  }
+
+  .btn-primary{
+    width: 120px;
+    padding-left: 0em;
+  }
+}
+
+
+
+.modal-open .modal{
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.modal.in .modal-dialog{
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+.modal.fade .modal-dialog{
+  -webkit-transform: translate(0, -25%);
+  -ms-transform: translate(0, -25%);
+  -o-transform: translate(0, -25%);
+  transform: translate(0, -25%);
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  -moz-transition: -moz-transform 0.3s ease-out;
+  -o-transition: -o-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+}
+
+
+//============================================
+// FADE IN/OUT ANIMATIONS
+
+.modal.visible{
+  display: block !important;
+  z-index: 10000;
+  position: relative;
+
+  -webkit-animation: modalFadeIn 0.5s; /* Safari, Chrome and Opera > 12.1 */
+   -moz-animation: modalFadeIn 0.5s; /* Firefox < 16 */
+    -ms-animation: modalFadeIn 0.5s; /* Internet Explorer */
+     -o-animation: modalFadeIn 0.5s; /* Opera < 12.1 */
+        animation: modalFadeIn 0.5s;
+}
+.modal.fade{
+  display: block;
+  z-index: 10000;
+  position: relative;
+
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.5s, opacity 0.5s;
+
+  // -webkit-animation: modalFadeOut 0.5s; /* Safari, Chrome and Opera > 12.1 */
+  //  -moz-animation: modalFadeOut 0.5s; /* Firefox < 16 */
+  //   -ms-animation: modalFadeOut 0.5s; /* Internet Explorer */
+  //    -o-animation: modalFadeOut 0.5s; /* Opera < 12.1 */
+  //       animation: modalFadeOut 0.5s;
+}
+
+
+@keyframes modalFadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes modalFadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes modalFadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes modalFadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes modalFadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+//---------------------------------
+
+@keyframes modalFadeOut {
+    from { opacity: 1; visibility: visible }
+    to   { opacity: 0; visibility: hidden }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes modalFadeOut {
+    from { opacity: 1; visibility: visible }
+    to   { opacity: 0; visibility: hidden }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes modalFadeOut {
+    from { opacity: 1; visibility: visible }
+    to   { opacity: 0; visibility: hidden }
+}
+
+/* Internet Explorer */
+@-ms-keyframes modalFadeOut {
+    from { opacity: 1; visibility: visible }
+    to   { opacity: 0; visibility: hidden }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes modalFadeOut {
+    from { opacity: 1; visibility: visible }
+    to   { opacity: 0; visibility: hidden }
+}
