@@ -3,15 +3,15 @@ Session.setDefault('confirmTitle', 'Hello Modal!');
 Session.setDefault('confirmDialogIsConfirmed', false);
 
 Template.confirmModal.helpers({
-  getConfirmationMessage: function() {
+  getConfirmationMessage: function () {
     return Session.get('confirmMessage');
   },
-  getConfirmationTitle: function() {
+  getConfirmationTitle: function () {
     return Session.get('confirmTitle');
   }
 });
 Template.confirmModal.events({
-  'click #modalConfirmButton': function() {
+  'click #modalConfirmButton': function () {
     Session.set('inPageAlertType', 'success');
     Session.set('inPageAlertText', 'success');
     Session.set('confirmDialogIsConfirmed', true);

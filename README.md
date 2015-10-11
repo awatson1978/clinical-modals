@@ -1,7 +1,7 @@
 clinical:modals
 ======================================
 
-Modal dialogs for the Clinical Meteor track.
+Modal dialogs for  ClinicalFramework apps.
 
 ========================================
 #### Installation  
@@ -14,7 +14,8 @@ meteor add clinical:modals
 #### Usage  
 
 ````js
-{{> keybindingsModal }}
+{{> promptModal }}
+{{> confirmModal }}
 ````
 
 
