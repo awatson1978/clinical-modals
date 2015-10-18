@@ -1,6 +1,6 @@
 Package.describe({
   name: 'clinical:modals',
-  version: '0.0.4',
+  version: '0.0.5',
   summary: 'Modal dialogs for the Clinical Meteor track.',
   git: 'https://github.com/awatson1978/clinical-modals',
   documentation: 'README.md'
